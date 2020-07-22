@@ -26,6 +26,8 @@ class MainActivity : AppCompatActivity() {
 
         imageHarryPotter.setOnClickListener {
             val intent = Intent(this, MainActivity2::class.java)
+            val movie = "HarryPotter"
+            intent.putExtra("movie", movie)
             startActivity(intent);
         }
 
