@@ -7,31 +7,32 @@
     android:background="?attr/bgColor"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/buttonActivity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@android:color/holo_blue_dark"
-        android:text="Button"
-        android:textColor="?attr/textColor"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.903" />
-
     <ImageButton
         android:id="@+id/imageButtonStarWars"
-        android:layout_width="154dp"
-        android:layout_height="226dp"
+        android:layout_width="153dp"
+        android:layout_height="231dp"
+        android:background="#000000"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.178"
+        app:layout_constraintHorizontal_bias="0.155"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.093"
+        app:layout_constraintVertical_bias="0.092"
         app:srcCompat="@drawable/starwars" />
+
+    <ImageButton
+        android:id="@+id/imageButtonHarryPotter"
+        android:layout_width="153dp"
+        android:layout_height="231dp"
+        android:background="#000000"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.092"
+        app:srcCompat="@drawable/harrypotter" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
