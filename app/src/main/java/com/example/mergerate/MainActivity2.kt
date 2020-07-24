@@ -16,18 +16,10 @@ class MainActivity2 : AppCompatActivity() {
         setTheme(R.style.DarkTheme)
         setTitle("Scientific Ranking")
         setContentView(R.layout.activity_main2)
+        textViewTest.setText("")
+        textViewButton.setText("")
 
-        val imageOptionOne = findViewById<ImageButton>(R.id.imageButtonOne)
-        imageOptionOne.setOnClickListener {
-            clickedOne = true
-            textViewTest.setText(clickedOne.toString())
-        }
 
-        val imageOptionTwo = findViewById<ImageButton>(R.id.imageButtonOne)
-        imageOptionTwo.setOnClickListener {
-            clickedTwo = true
-            textViewTest.setText(clickedTwo.toString())
-        }
 
         //Get the button pressed from last activity
         val movie = intent.getStringExtra("movie")
@@ -40,62 +32,78 @@ class MainActivity2 : AppCompatActivity() {
 
     fun runStarWarsThread() {
         thread(start = true) {
-            val numbers = arrayOf<String>("3", "4", "2", "1")
-            val temp = Array<String>(numbers.size) {"1"}
-
-            val sortedList = mergeSort(numbers, temp, 0, numbers.size - 1)
-            println("Unsorted: $numbers")
-            println("Sorted: $sortedList")
+            val numbers = listOf("3", "4", "2", "1", "52", "7", "5", "8")
+            val sortedList = mergeSort(numbers)
+            runOnUiThread {
+                textViewTest.setText(sortedList.toString())
+            }
         }
     }
 
-    private fun mergeSort(array: Array<String>, temp: Array<String>, leftStart: Int, rightEnd: Int) {
-        if (leftStart >= rightEnd) {
-            return;
+    fun mergeSort(list: List<String>): List<String> {
+        if (list.size <= 1) {
+            return list
         }
 
-        val middle = (leftStart + rightEnd) / 2
-        mergeSort(array, temp, leftStart, middle)
-        mergeSort(array, temp, middle + 1, rightEnd)
-        mergeHalves(array, temp, leftStart, rightEnd)
+        val middle = list.size / 2
+        var left = list.subList(0,middle);
+        var right = list.subList(middle,list.size);
+
+        return merge(mergeSort(left), mergeSort(right))
     }
 
-    private fun mergeHalves(array: Array<String>, temp: Array<String>, leftStart: Int, rightEnd: Int) {
-        println("\nTESTBRUH")
-        val leftEnd = (rightEnd +leftStart) / 2
-        val rightStart = leftEnd + 1
-        val size = rightEnd - leftStart + 1
+    fun merge(left: List<String>, right: List<String>): List<String>  {
+        var indexLeft = 0
+        var indexRight = 0
+        var newList : MutableList<String> = mutableListOf()
 
-        var left = leftStart
-        var right = rightStart
-        var index = leftStart
-
-        while (!clickedOne && !clickedTwo) {
-            println("Click a button.")
+        runOnUiThread {
+            textViewTest.setText(left[indexLeft] + " or " + right[indexRight])
         }
 
-        while (left <= leftEnd && right <= rightEnd) {
-            println("\nTESTBRUH1")
+        val imageOptionOne = findViewById<ImageButton>(R.id.imageButtonOne)
+        imageOptionOne.setOnClickListener {
+            this.clickedOne = true
+            textViewButton.setText("one")
+        }
 
-            textViewTest.setText(array[left] + " or " + array[right])
+        val imageOptionTwo = findViewById<ImageButton>(R.id.imageButtonTwo)
+        imageOptionTwo.setOnClickListener {
+            this.clickedTwo = true
+            textViewButton.setText("two")
+        }
+
+        while (indexLeft < left.count() && indexRight < right.count()) {
+            runOnUiThread {
+                textViewTest.setText(left[indexLeft] + " or " + right[indexRight])
+            }
+
+            while (!clickedOne && !clickedTwo) {
+                print("waiting for option")
+            }
 
             if (clickedOne) {
                 clickedOne = false
-                println("\nTESTBRUH2")
-                temp[index] = array[left]
-                left++
-            }
-
-            if (clickedTwo) {
                 clickedTwo = false
-                println("\nTESTBRUH3")
-                temp[index] = array[right]
-                right++
+                newList.add(left[indexLeft])
+                indexLeft++
+            } else if (clickedTwo) {
+                clickedTwo = false
+                clickedOne = false
+                newList.add(right[indexRight])
+                indexRight++
             }
-            index++
         }
-        System.arraycopy(array, left, temp, index, leftEnd - left + 1)
-        System.arraycopy(array, right, temp, index, rightEnd - right + 1)
-        System.arraycopy(temp, leftStart, array, leftStart, size)
+
+        while (indexLeft < left.size) {
+            newList.add(left[indexLeft])
+            indexLeft++
+        }
+
+        while (indexRight < right.size) {
+            newList.add(right[indexRight])
+            indexRight++
+        }
+        return newList;
     }
 }
