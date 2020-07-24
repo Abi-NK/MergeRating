@@ -1,5 +1,6 @@
 package com.example.mergerate
 
+import android.content.Intent
 import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -32,11 +33,15 @@ class MainActivity2 : AppCompatActivity() {
 
     fun runStarWarsThread() {
         thread(start = true) {
-            val numbers = listOf("3", "4", "2", "1", "52", "7", "5", "8")
+            val numbers = listOf("sw_1", "sw_2", "sw_3", "sw_4", "sw_5", "sw_6", "sw_7", "sw_8", "sw_9", "sw_ro", "sw_so")
             val sortedList = mergeSort(numbers)
             runOnUiThread {
                 textViewTest.setText(sortedList.toString())
             }
+
+            val intent = Intent(this, Results::class.java)
+            intent.putStringArrayListExtra("rating", ArrayList(sortedList))
+            startActivity(intent)
         }
     }
 
@@ -75,6 +80,10 @@ class MainActivity2 : AppCompatActivity() {
 
         while (indexLeft < left.count() && indexRight < right.count()) {
             runOnUiThread {
+                val id1 = resources.getIdentifier(left[indexLeft], "drawable", packageName)
+                imageOptionOne.setImageResource(id1)
+                val id2 = resources.getIdentifier(right[indexRight], "drawable", packageName)
+                imageOptionTwo.setImageResource(id2)
                 textViewTest.setText(left[indexLeft] + " or " + right[indexRight])
             }
 
