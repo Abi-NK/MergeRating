@@ -75,6 +75,55 @@ class MainActivity2 : AppCompatActivity() {
                                  "px_16", "px_17", "px_18", "px_19", "px_20", "px_21", "px_22")
             runThread(numbers)
         }
+
+        //if the James Bond button was pressed
+        if (movie.equals("JB")) {
+            val numbers = listOf("jb_1", "jb_2", "jb_3", "jb_4", "jb_5")
+            runThread(numbers)
+        }
+
+        //if the Transformers button was pressed
+        if (movie.equals("TF")) {
+            val numbers = listOf("tf_1", "tf_2", "tf_3", "tf_4", "tf_5", "tf_6")
+            runThread(numbers)
+        }
+
+        //if the X-Men button was pressed
+        if (movie.equals("XM")) {
+            val numbers = listOf("xm_1", "xm_2", "xm_3", "xm_4", "xm_5", "xm_6", "xm_7", "xm_8",
+                                 "xm_9", "xm_10", "xm_11", "xm_12", "xm_13")
+            runThread(numbers)
+        }
+
+        //if the Jurassic Park button was pressed
+        if (movie.equals("JP")) {
+            val numbers = listOf("jp_1", "jp_2", "jp_3", "jp_4", "jp_5")
+            runThread(numbers)
+        }
+
+        //if the Mission Impossible button was pressed
+        if (movie.equals("MI")) {
+            val numbers = listOf("mi_1", "mi_2", "mi_3", "mi_4", "mi_5", "mi_6")
+            runThread(numbers)
+        }
+
+        //if the Indiana Jones button was pressed
+        if (movie.equals("IJ")) {
+            val numbers = listOf("ij_1", "ij_2", "ij_3", "ij_4")
+            runThread(numbers)
+        }
+
+        //if the Terminator button was pressed
+        if (movie.equals("TM")) {
+            val numbers = listOf("tm_1", "tm_2", "tm_3", "tm_4", "tm_5", "tm_6")
+            runThread(numbers)
+        }
+
+        //if the Alien button was pressed
+        if (movie.equals("AL")) {
+            val numbers = listOf("al_1", "al_2", "al_3", "al_4", "al_5", "al_6")
+            runThread(numbers)
+        }
     }
 
     fun runThread(numbers: List<String>) {

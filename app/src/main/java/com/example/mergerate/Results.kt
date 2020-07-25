@@ -311,6 +311,167 @@ class Results : AppCompatActivity() {
             if (nameID.equals("px_22")) {
                 return "Onward"
             }
+        } else if (nameID.substring(0, 2).equals("jb")) {
+            if (nameID.equals("jb_1")) {
+                return "Casino Royale"
+            }
+            if (nameID.equals("jb_2")) {
+                return "Quantum of Solace"
+            }
+            if (nameID.equals("jb_3")) {
+                return "Skyfall"
+            }
+            if (nameID.equals("jb_4")) {
+                return "Spectre"
+            }
+            if (nameID.equals("jb_5")) {
+                return "No Time To Die"
+            }
+        } else if (nameID.substring(0, 2).equals("tf")) {
+            if (nameID.equals("tf_1")) {
+                return "Transformers"
+            }
+            if (nameID.equals("tf_2")) {
+                return "Revenge of the Fallen"
+            }
+            if (nameID.equals("tf_3")) {
+                return "Dark of the Moon"
+            }
+            if (nameID.equals("tf_4")) {
+                return "Age of Extinction"
+            }
+            if (nameID.equals("tf_5")) {
+                return "The Last Knight"
+            }
+            if (nameID.equals("tf_6")) {
+                return "Bumblebee"
+            }
+        } else if (nameID.substring(0, 2).equals("xm")) {
+            if (nameID.equals("xm_1")) {
+                return "X-Men"
+            }
+            if (nameID.equals("xm_2")) {
+                return "X2"
+            }
+            if (nameID.equals("xm_3")) {
+                return "The Last Stand"
+            }
+            if (nameID.equals("xm_4")) {
+                return "Origins: Wolverine"
+            }
+            if (nameID.equals("xm_5")) {
+                return "First Class"
+            }
+            if (nameID.equals("xm_6")) {
+                return "The Wolverine"
+            }
+            if (nameID.equals("xm_7")) {
+                return "Days of Future Past"
+            }
+            if (nameID.equals("xm_8")) {
+                return "Deadpool"
+            }
+            if (nameID.equals("xm_9")) {
+                return "Apocalypse"
+            }
+            if (nameID.equals("xm_10")) {
+                return "Logan"
+            }
+            if (nameID.equals("xm_11")) {
+                return "Deadpool 2"
+            }
+            if (nameID.equals("xm_12")) {
+                return "Dark Phoenix"
+            }
+            if (nameID.equals("xm_13")) {
+                return "The New Mutants"
+            }
+        } else if (nameID.substring(0, 2).equals("jp")) {
+            if (nameID.equals("jp_1")) {
+                return "Jurassic Park"
+            }
+            if (nameID.equals("jp_2")) {
+                return "The Lost World"
+            }
+            if (nameID.equals("jp_3")) {
+                return "Jurassic Park 3"
+            }
+            if (nameID.equals("jp_4")) {
+                return "Jurassic World"
+            }
+            if (nameID.equals("jp_5")) {
+                return "Fallen Kingdom"
+            }
+        } else if (nameID.substring(0, 2).equals("mi")) {
+            if (nameID.equals("mi_1")) {
+                return "Mission: Impossible"
+            }
+            if (nameID.equals("mi_2")) {
+                return "Mission: Impossible 2"
+            }
+            if (nameID.equals("mi_3")) {
+                return "Mission: Impossible 3"
+            }
+            if (nameID.equals("mi_4")) {
+                return "Mission: Impossible Ghost Protocol"
+            }
+            if (nameID.equals("mi_5")) {
+                return "Mission: Impossible Rogue Nation"
+            }
+            if (nameID.equals("mi_6")) {
+                return "Mission: Impossible Fallout"
+            }
+        } else if (nameID.substring(0, 2).equals("ij")) {
+            if (nameID.equals("ij_1")) {
+                return "Raiders of the Lost Ark"
+            }
+            if (nameID.equals("ij_2")) {
+                return "The Temple of Doom"
+            }
+            if (nameID.equals("ij_3")) {
+                return "The Last Crusade"
+            }
+            if (nameID.equals("ij_4")) {
+                return "The Kingdom of the Crystal Skull"
+            }
+        } else if (nameID.substring(0, 2).equals("tm")) {
+            if (nameID.equals("tm_1")) {
+                return "The Terminator"
+            }
+            if (nameID.equals("tm_2")) {
+                return "Judgement Day"
+            }
+            if (nameID.equals("tm_3")) {
+                return "Rise of the Machines"
+            }
+            if (nameID.equals("tm_4")) {
+                return "Salvation"
+            }
+            if (nameID.equals("tm_5")) {
+                return "Genisys"
+            }
+            if (nameID.equals("tm_6")) {
+                return "Dark Fate"
+            }
+        } else if (nameID.substring(0, 2).equals("al")) {
+            if (nameID.equals("al_1")) {
+                return "Alien"
+            }
+            if (nameID.equals("al_2")) {
+                return "Aliens"
+            }
+            if (nameID.equals("al_3")) {
+                return "Alien 3"
+            }
+            if (nameID.equals("al_4")) {
+                return "Alien Resurrection"
+            }
+            if (nameID.equals("al_5")) {
+                return "Prometheus"
+            }
+            if (nameID.equals("al_6")) {
+                return "Alien: Covenant"
+            }
         }
         return ""
     }
