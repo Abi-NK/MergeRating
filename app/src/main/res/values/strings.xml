@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MergeRate</string>
+    <string name="question">Which movie is better?</string>
+    <string name="description">The algorithm uses merge sort to figure out your favourite movie.</string>
 </resources>
