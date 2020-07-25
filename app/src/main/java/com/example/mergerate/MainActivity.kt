@@ -18,6 +18,9 @@ class MainActivity : AppCompatActivity() {
         val imageStarWars = findViewById<ImageButton>(R.id.imageButtonStarWars)
         val imageHarryPotter = findViewById<ImageButton>(R.id.imageButtonHarryPotter)
         val imagePirates = findViewById<ImageButton>(R.id.imageButtonPirates)
+        val imageMarvel = findViewById<ImageButton>(R.id.imageButtonMarvel)
+        val imageDC = findViewById<ImageButton>(R.id.imageButtonDC)
+        val imageLR = findViewById<ImageButton>(R.id.imageButtonLordRings)
 
         imageStarWars.setOnClickListener {
             val intent = Intent(this, MainActivity2::class.java)
@@ -36,6 +39,27 @@ class MainActivity : AppCompatActivity() {
         imagePirates.setOnClickListener {
             val intent = Intent(this, MainActivity2::class.java)
             val movie = "Pirates"
+            intent.putExtra("movie", movie)
+            startActivity(intent);
+        }
+
+        imageMarvel.setOnClickListener {
+            val intent = Intent(this, MainActivity2::class.java)
+            val movie = "Marvel"
+            intent.putExtra("movie", movie)
+            startActivity(intent);
+        }
+
+        imageDC.setOnClickListener {
+            val intent = Intent(this, MainActivity2::class.java)
+            val movie = "DC"
+            intent.putExtra("movie", movie)
+            startActivity(intent);
+        }
+
+        imageLR.setOnClickListener {
+            val intent = Intent(this, MainActivity2::class.java)
+            val movie = "LR"
             intent.putExtra("movie", movie)
             startActivity(intent);
         }

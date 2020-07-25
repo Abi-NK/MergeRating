@@ -7,60 +7,148 @@
     android:background="?attr/bgColor"
     tools:context=".MainActivity">
 
-    <ScrollView
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="56dp"
+        android:layout_height="29dp"
+        android:text="TextView"
+        android:visibility="invisible"
+        tools:visibility="invisible" />
+
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fillViewport="true"
-        tools:layout_editor_absoluteX="-179dp"
-        tools:layout_editor_absoluteY="-16dp">
+        android:fillViewport="true">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp"
+            android:stretchColumns="0,1">
 
-            <ImageButton
-                android:id="@+id/imageButtonStarWars"
-                android:layout_width="167dp"
-                android:layout_height="266dp"
-                android:background="#000000"
-                android:scaleType="fitXY"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.147"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.034"
-                app:srcCompat="@drawable/starwars" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp">
 
-            <ImageButton
-                android:id="@+id/imageButtonPirates"
-                android:layout_width="167dp"
-                android:layout_height="266dp"
-                android:background="#000000"
-                android:scaleType="fitXY"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.149"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageButtonStarWars"
-                app:layout_constraintVertical_bias="0.093"
-                app:srcCompat="@drawable/pirates" />
+                <ImageButton
+                    android:id="@+id/imageButtonStarWars"
+                    android:layout_width="120dp"
+                    android:layout_height="260dp"
+                    android:layout_marginRight="8dp"
+                    android:background="#000000"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/starwars" />
 
-            <ImageButton
-                android:id="@+id/imageButtonHarryPotter"
-                android:layout_width="167dp"
-                android:layout_height="266dp"
-                android:background="#000000"
-                android:scaleType="fitXY"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.868"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.034"
-                app:srcCompat="@drawable/harrypotter" />
+                <ImageButton
+                    android:id="@+id/imageButtonMarvel"
+                    android:layout_width="120dp"
+                    android:layout_height="260dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#000000"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/marvel" />
+            </TableRow>
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </ScrollView>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp">
+
+                <ImageButton
+                    android:id="@+id/imageButtonDC"
+                    android:layout_width="120dp"
+                    android:layout_height="260dp"
+                    android:layout_marginRight="8dp"
+                    android:background="#000000"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/dc" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonPirates"
+                    android:layout_width="120dp"
+                    android:layout_height="260dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#000000"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/pirates" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp">
+
+                <ImageButton
+                    android:id="@+id/imageButtonHarryPotter"
+                    android:layout_width="120dp"
+                    android:layout_height="260dp"
+                    android:layout_marginRight="8dp"
+                    android:background="#000000"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/harrypotter" />
+
+
+
+                <ImageButton
+                    android:id="@+id/imageButtonLordRings"
+                    android:layout_width="120dp"
+                    android:layout_height="260dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#000000"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/lr" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp">
+
+                <ImageButton
+                    android:id="@+id/imageButtonHarryPotter5"
+                    android:layout_width="120dp"
+                    android:layout_height="260dp"
+                    android:layout_marginRight="8dp"
+                    android:background="#000000"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/harrypotter" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonHarryPotter4"
+                    android:layout_width="120dp"
+                    android:layout_height="260dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#000000"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/harrypotter" />
+            </TableRow>
+        </TableLayout>
+    </androidx.core.widget.NestedScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

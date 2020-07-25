@@ -24,7 +24,8 @@ class MainActivity2 : AppCompatActivity() {
 
         //if the star wars button was pressed
         if (movie.equals("StarWars")) {
-            val numbers = listOf("sw_1", "sw_2", "sw_3", "sw_4", "sw_5", "sw_6", "sw_7", "sw_8", "sw_9", "sw_ro", "sw_so")
+            val numbers = listOf("sw_1", "sw_2", "sw_3", "sw_4", "sw_5", "sw_6", "sw_7", "sw_8",
+                                 "sw_9", "sw_ro", "sw_so")
             runThread(numbers)
         }
 
@@ -34,9 +35,30 @@ class MainActivity2 : AppCompatActivity() {
             runThread(numbers)
         }
 
-        //if the harry potter button was pressed
+        //if the Pirates button was pressed
         if (movie.equals("Pirates")) {
             val numbers = listOf("pc_1", "pc_2", "pc_3", "pc_4", "pc_5")
+            runThread(numbers)
+        }
+
+        //if the Marvel button was pressed
+        if (movie.equals("Marvel")) {
+            val numbers = listOf("mu_1", "mu_2", "mu_3", "mu_4", "mu_5", "mu_6", "mu_7", "mu_8",
+                                 "mu_9", "mu_10", "mu_11", "mu_12", "mu_13", "mu_14", "mu_15",
+                                 "mu_16", "mu_17", "mu_18", "mu_19", "mu_20", "mu_21", "mu_22",
+                                 "mu_23")
+            runThread(numbers)
+        }
+
+        //if the DC button was pressed
+        if (movie.equals("DC")) {
+            val numbers = listOf("dc_1", "dc_2", "dc_3", "dc_4", "dc_5", "dc_6", "dc_7", "dc_8")
+            runThread(numbers)
+        }
+
+        //if the Lord of the Rings button was pressed
+        if (movie.equals("LR")) {
+            val numbers = listOf("lr_1", "lr_2", "lr_3", "lr_4", "lr_5", "lr_6")
             runThread(numbers)
         }
     }
