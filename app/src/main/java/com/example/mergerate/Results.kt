@@ -13,29 +13,56 @@ class Results : AppCompatActivity() {
         setContentView(R.layout.activity_results)
         textViewRating.setText(" ")
 
-        val starwars_movies: Array<Array<String>> = arrayOf(
-            arrayOf("sw_1", "sw_2", "sw_3", "sw_4", "sw_5", "sw_6", "sw_7", "sw_8", "sw_9", "sw_ro", "sw_so"),
-            arrayOf("The Phantom Menace", "Attack Of The Clones", "Revenge Of The Sith",
-                    "A New Hope", "Empire Strikes Back", "Return Of The Jedi", "The Force Awakens",
-                    "The Last Jedi", "The Rise Of Skywalker", "Rogue One", "Solo")
-        )
-
         val array = intent.getStringArrayListExtra("rating")
-        println("\n\n\nArray is: " + array.toString() + "\n\n.")
-        var counter = 0
         var rating = ""
         var position = 1
         if (array != null) {
             for (i in array) {
-                if (i.equals(starwars_movies[0][counter])) {
-                    println("Rating: " + rating)
-                    rating = rating + position + ". " + starwars_movies[1][counter] + "\n"
-                }
-                counter++
+                val movieName = getName(i)
+                rating = "$rating$position. $movieName\n"
                 position++
             }
         }
-
         textViewRating.setText(rating)
+    }
+
+    fun getName(nameID: String):String {
+        if (nameID.substring(0, 2).equals("sw")) {
+            if (nameID.equals("sw_1")) {
+                return "The Phantom Menace"
+            }
+            if (nameID.equals("sw_2")) {
+                return "Attack Of The Clones"
+            }
+            if (nameID.equals("sw_3")) {
+                return "Revenge Of The Sith"
+            }
+            if (nameID.equals("sw_4")) {
+                return "A New Hope"
+            }
+            if (nameID.equals("sw_5")) {
+                return "Empire Strikes Back"
+            }
+            if (nameID.equals("sw_6")) {
+                return "Return Of The Jedi"
+            }
+            if (nameID.equals("sw_7")) {
+                return "The Force Awakens"
+            }
+            if (nameID.equals("sw_8")) {
+                return "The Last Jedi"
+            }
+            if (nameID.equals("sw_9")) {
+                return "The Rise Of Skywalker"
+            }
+            if (nameID.equals("sw_ro")) {
+                return "Rogue One"
+            }
+            if (nameID.equals("sw_so")) {
+                return "Solo"
+            }
+
+        }
+        return ""
     }
 }

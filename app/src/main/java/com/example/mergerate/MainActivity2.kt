@@ -18,7 +18,6 @@ class MainActivity2 : AppCompatActivity() {
         setTitle("Scientific Ranking")
         setContentView(R.layout.activity_main2)
         textViewTest.setText("")
-        textViewButton.setText("")
 
 
 
@@ -69,13 +68,11 @@ class MainActivity2 : AppCompatActivity() {
         val imageOptionOne = findViewById<ImageButton>(R.id.imageButtonOne)
         imageOptionOne.setOnClickListener {
             this.clickedOne = true
-            textViewButton.setText("one")
         }
 
         val imageOptionTwo = findViewById<ImageButton>(R.id.imageButtonTwo)
         imageOptionTwo.setOnClickListener {
             this.clickedTwo = true
-            textViewButton.setText("two")
         }
 
         while (indexLeft < left.count() && indexRight < right.count()) {
