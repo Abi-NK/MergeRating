@@ -19,20 +19,30 @@ class MainActivity2 : AppCompatActivity() {
         setContentView(R.layout.activity_main2)
         textViewTest.setText("")
 
-
-
         //Get the button pressed from last activity
         val movie = intent.getStringExtra("movie")
 
         //if the star wars button was pressed
         if (movie.equals("StarWars")) {
-            runStarWarsThread()
+            val numbers = listOf("sw_1", "sw_2", "sw_3", "sw_4", "sw_5", "sw_6", "sw_7", "sw_8", "sw_9", "sw_ro", "sw_so")
+            runThread(numbers)
+        }
+
+        //if the harry potter button was pressed
+        if (movie.equals("HarryPotter")) {
+            val numbers = listOf("hp_1", "hp_2", "hp_3", "hp_4", "hp_5", "hp_6", "hp_7", "hp_8")
+            runThread(numbers)
+        }
+
+        //if the harry potter button was pressed
+        if (movie.equals("Pirates")) {
+            val numbers = listOf("pc_1", "pc_2", "pc_3", "pc_4", "pc_5")
+            runThread(numbers)
         }
     }
 
-    fun runStarWarsThread() {
+    fun runThread(numbers: List<String>) {
         thread(start = true) {
-            val numbers = listOf("sw_1", "sw_2", "sw_3", "sw_4", "sw_5", "sw_6", "sw_7", "sw_8", "sw_9", "sw_ro", "sw_so")
             val sortedList = mergeSort(numbers)
             runOnUiThread {
                 textViewTest.setText(sortedList.toString())

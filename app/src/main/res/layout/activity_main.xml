@@ -7,32 +7,60 @@
     android:background="?attr/bgColor"
     tools:context=".MainActivity">
 
-    <ImageButton
-        android:id="@+id/imageButtonStarWars"
-        android:layout_width="153dp"
-        android:layout_height="231dp"
-        android:background="#000000"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.155"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.092"
-        app:srcCompat="@drawable/starwars" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:layout_editor_absoluteX="-179dp"
+        tools:layout_editor_absoluteY="-16dp">
 
-    <ImageButton
-        android:id="@+id/imageButtonHarryPotter"
-        android:layout_width="153dp"
-        android:layout_height="231dp"
-        android:background="#000000"
-        android:scaleType="fitXY"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.875"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.092"
-        app:srcCompat="@drawable/harrypotter" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/imageButtonStarWars"
+                android:layout_width="167dp"
+                android:layout_height="266dp"
+                android:background="#000000"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.147"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.034"
+                app:srcCompat="@drawable/starwars" />
+
+            <ImageButton
+                android:id="@+id/imageButtonPirates"
+                android:layout_width="167dp"
+                android:layout_height="266dp"
+                android:background="#000000"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.149"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonStarWars"
+                app:layout_constraintVertical_bias="0.093"
+                app:srcCompat="@drawable/pirates" />
+
+            <ImageButton
+                android:id="@+id/imageButtonHarryPotter"
+                android:layout_width="167dp"
+                android:layout_height="266dp"
+                android:background="#000000"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.868"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.034"
+                app:srcCompat="@drawable/harrypotter" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

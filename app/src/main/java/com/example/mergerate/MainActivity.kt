@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_main.view.*
 
 class MainActivity : AppCompatActivity() {
@@ -16,6 +17,7 @@ class MainActivity : AppCompatActivity() {
 
         val imageStarWars = findViewById<ImageButton>(R.id.imageButtonStarWars)
         val imageHarryPotter = findViewById<ImageButton>(R.id.imageButtonHarryPotter)
+        val imagePirates = findViewById<ImageButton>(R.id.imageButtonPirates)
 
         imageStarWars.setOnClickListener {
             val intent = Intent(this, MainActivity2::class.java)
@@ -27,6 +29,13 @@ class MainActivity : AppCompatActivity() {
         imageHarryPotter.setOnClickListener {
             val intent = Intent(this, MainActivity2::class.java)
             val movie = "HarryPotter"
+            intent.putExtra("movie", movie)
+            startActivity(intent);
+        }
+
+        imagePirates.setOnClickListener {
+            val intent = Intent(this, MainActivity2::class.java)
+            val movie = "Pirates"
             intent.putExtra("movie", movie)
             startActivity(intent);
         }
