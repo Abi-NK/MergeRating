@@ -61,6 +61,20 @@ class MainActivity2 : AppCompatActivity() {
             val numbers = listOf("lr_1", "lr_2", "lr_3", "lr_4", "lr_5", "lr_6")
             runThread(numbers)
         }
+
+        //if the Fast and Furious button was pressed
+        if (movie.equals("FF")) {
+            val numbers = listOf("ff_1", "ff_2", "ff_3", "ff_4", "ff_5", "ff_6", "ff_7", "ff_8", "ff_9")
+            runThread(numbers)
+        }
+
+        //if the Pixar button was pressed
+        if (movie.equals("PX")) {
+            val numbers = listOf("px_1", "px_2", "px_3", "px_4", "px_5", "px_6", "px_7", "px_8",
+                                 "px_9", "px_10", "px_11", "px_12", "px_13", "px_14", "px_15",
+                                 "px_16", "px_17", "px_18", "px_19", "px_20", "px_21", "px_22")
+            runThread(numbers)
+        }
     }
 
     fun runThread(numbers: List<String>) {

@@ -216,6 +216,101 @@ class Results : AppCompatActivity() {
             if (nameID.equals("lr_6")) {
                 return "The Battle of the Five Armies"
             }
+        } else if (nameID.substring(0, 2).equals("ff")) {
+            if (nameID.equals("ff_1")) {
+                return "The Fast and the Furious"
+            }
+            if (nameID.equals("ff_2")) {
+                return "2 Fast 2 Furious"
+            }
+            if (nameID.equals("ff_3")) {
+                return "Tokyo Drift"
+            }
+            if (nameID.equals("ff_4")) {
+                return "Fast & Furious"
+            }
+            if (nameID.equals("ff_5")) {
+                return "Fast Five"
+            }
+            if (nameID.equals("ff_6")) {
+                return "Fast & Furious 6"
+            }
+            if (nameID.equals("ff_7")) {
+                return "Furious 7"
+            }
+            if (nameID.equals("ff_8")) {
+                return "The Fate and the Furious"
+            }
+            if (nameID.equals("ff_9")) {
+                return "Hobbs & Shaw"
+            }
+        } else if (nameID.substring(0, 2).equals("px")) {
+            if (nameID.equals("px_1")) {
+                return "Toy Story"
+            }
+            if (nameID.equals("px_2")) {
+                return "A Bug's Life"
+            }
+            if (nameID.equals("px_3")) {
+                return "Toy Story 2"
+            }
+            if (nameID.equals("px_4")) {
+                return "Monster's Inc."
+            }
+            if (nameID.equals("px_5")) {
+                return "Finding Nemo"
+            }
+            if (nameID.equals("px_6")) {
+                return "The Incredibles"
+            }
+            if (nameID.equals("px_7")) {
+                return "Cars"
+            }
+            if (nameID.equals("px_8")) {
+                return "Ratatouille"
+            }
+            if (nameID.equals("px_9")) {
+                return "WALL-E"
+            }
+            if (nameID.equals("px_10")) {
+                return "Up"
+            }
+            if (nameID.equals("px_11")) {
+                return "Toy Story 3"
+            }
+            if (nameID.equals("px_12")) {
+                return "Cars 2"
+            }
+            if (nameID.equals("px_13")) {
+                return "Brave"
+            }
+            if (nameID.equals("px_14")) {
+                return "Monsters University"
+            }
+            if (nameID.equals("px_15")) {
+                return "Inside Out"
+            }
+            if (nameID.equals("px_16")) {
+                return "The Good Dinosaur"
+            }
+            if (nameID.equals("px_17")) {
+                return "Finding Dory"
+            }
+            if (nameID.equals("px_18")) {
+                return "Cars 3"
+            }
+            if (nameID.equals("px_19")) {
+                return "Coco"
+            }
+            if (nameID.equals("px_20")) {
+                return "Incredibles 2"
+            }
+            if (nameID.equals("px_21")) {
+                return "Toy Story 4"
+            }
+            if (nameID.equals("px_22")) {
+                return "Onward"
+            }
         }
         return ""
     }
