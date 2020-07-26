@@ -124,6 +124,59 @@ class MainActivity2 : AppCompatActivity() {
             val numbers = listOf("al_1", "al_2", "al_3", "al_4", "al_5", "al_6")
             runThread(numbers)
         }
+
+        //if the Dreamworks button was pressed
+        if (movie.equals("DW")) {
+            val numbers = listOf("dw_1", "dw_2", "dw_3", "dw_4", "dw_5", "dw_6", "dw_7", "dw_8",
+                                 "dw_9", "dw_10", "dw_11", "dw_12", "dw_13", "dw_14", "dw_15",
+                                 "dw_16", "dw_17", "dw_18", "dw_19", "dw_20", "dw_21", "dw_22",
+                                 "dw_23", "dw_24", "dw_25", "dw_26", "dw_27", "dw_28", "dw_29",
+                                 "dw_30", "dw_31", "dw_32", "dw_33", "dw_34", "dw_35", "dw_36",
+                                 "dw_37", "dw_38")
+            runThread(numbers)
+        }
+
+        //if the Conjuring button was pressed
+        if (movie.equals("CJ")) {
+            val numbers = listOf("cj_1", "cj_2", "cj_3", "cj_4", "cj_5", "cj_6", "cj_7")
+            runThread(numbers)
+        }
+
+        //if the Bourne button was pressed
+        if (movie.equals("BO")) {
+            val numbers = listOf("bo_1", "bo_2", "bo_3", "bo_4", "bo_5")
+            runThread(numbers)
+        }
+
+        //if the Rocky button was pressed
+        if (movie.equals("RK")) {
+            val numbers = listOf("rk_1", "rk_2", "rk_3", "rk_4", "rk_5", "rk_6", "rk_7", "rk_8")
+            runThread(numbers)
+        }
+
+        //if the Die Hard button was pressed
+        if (movie.equals("DH")) {
+            val numbers = listOf("dh_1", "dh_2", "dh_3", "dh_4", "dh_5")
+            runThread(numbers)
+        }
+
+        //if the Twilight button was pressed
+        if (movie.equals("TW")) {
+            val numbers = listOf("tw_1", "tw_2", "tw_3", "tw_4", "tw_5")
+            runThread(numbers)
+        }
+
+        //if the Nolan button was pressed
+        if (movie.equals("CN")) {
+            val numbers = listOf("cn_1", "cn_2", "cn_3", "cn_4", "cn_5", "cn_6", "cn_7", "cn_8", "cn_9", "cn_10")
+            runThread(numbers)
+        }
+
+        //if the Villeneuve button was pressed
+        if (movie.equals("DV")) {
+            val numbers = listOf("dv_1", "dv_2", "dv_3", "dv_4", "dv_5", "dv_6", "dv_7")
+            runThread(numbers)
+        }
     }
 
     fun runThread(numbers: List<String>) {

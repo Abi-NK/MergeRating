@@ -31,6 +31,14 @@ class MainActivity : AppCompatActivity() {
         val imageIJ = findViewById<ImageButton>(R.id.imageButtonIndianaJones)
         val imageTM = findViewById<ImageButton>(R.id.imageButtonTerminator)
         val imageAL = findViewById<ImageButton>(R.id.imageButtonAlien)
+        val imageDW = findViewById<ImageButton>(R.id.imageButtonDreamworks)
+        val imageCJ = findViewById<ImageButton>(R.id.imageButtonConjuring)
+        val imageBO = findViewById<ImageButton>(R.id.imageButtonJasonBourne)
+        val imageRK = findViewById<ImageButton>(R.id.imageButtonRocky)
+        val imageDH = findViewById<ImageButton>(R.id.imageButtonDieHard)
+        val imageTW = findViewById<ImageButton>(R.id.imageButtonTwilight)
+        val imageCN = findViewById<ImageButton>(R.id.imageButtonNolan)
+        val imageDV = findViewById<ImageButton>(R.id.imageButtonVilleneuve)
 
         imageStarWars.setOnClickListener {
             val intent = Intent(this, MainActivity2::class.java)
@@ -140,6 +148,62 @@ class MainActivity : AppCompatActivity() {
         imageAL.setOnClickListener {
             val intent = Intent(this, MainActivity2::class.java)
             val movie = "AL"
+            intent.putExtra("movie", movie)
+            startActivity(intent);
+        }
+
+        imageDW.setOnClickListener {
+            val intent = Intent(this, MainActivity2::class.java)
+            val movie = "DW"
+            intent.putExtra("movie", movie)
+            startActivity(intent);
+        }
+
+        imageCJ.setOnClickListener {
+            val intent = Intent(this, MainActivity2::class.java)
+            val movie = "CJ"
+            intent.putExtra("movie", movie)
+            startActivity(intent);
+        }
+
+        imageBO.setOnClickListener {
+            val intent = Intent(this, MainActivity2::class.java)
+            val movie = "BO"
+            intent.putExtra("movie", movie)
+            startActivity(intent);
+        }
+
+        imageRK.setOnClickListener {
+            val intent = Intent(this, MainActivity2::class.java)
+            val movie = "RK"
+            intent.putExtra("movie", movie)
+            startActivity(intent);
+        }
+
+        imageDH.setOnClickListener {
+            val intent = Intent(this, MainActivity2::class.java)
+            val movie = "DH"
+            intent.putExtra("movie", movie)
+            startActivity(intent);
+        }
+
+        imageTW.setOnClickListener {
+            val intent = Intent(this, MainActivity2::class.java)
+            val movie = "TW"
+            intent.putExtra("movie", movie)
+            startActivity(intent);
+        }
+
+        imageCN.setOnClickListener {
+            val intent = Intent(this, MainActivity2::class.java)
+            val movie = "CN"
+            intent.putExtra("movie", movie)
+            startActivity(intent);
+        }
+
+        imageDV.setOnClickListener {
+            val intent = Intent(this, MainActivity2::class.java)
+            val movie = "DV"
             intent.putExtra("movie", movie)
             startActivity(intent);
         }

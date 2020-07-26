@@ -472,6 +472,269 @@ class Results : AppCompatActivity() {
             if (nameID.equals("al_6")) {
                 return "Alien: Covenant"
             }
+        } else if (nameID.substring(0, 2).equals("dw")) {
+            if (nameID.equals("dw_1")) {
+                return "Antz"
+            }
+            if (nameID.equals("dw_2")) {
+                return "The Prince of Egypt"
+            }
+            if (nameID.equals("dw_3")) {
+                return "The Road to El Dorado"
+            }
+            if (nameID.equals("dw_4")) {
+                return "Chicken Run"
+            }
+            if (nameID.equals("dw_5")) {
+                return "Shrek"
+            }
+            if (nameID.equals("dw_6")) {
+                return "Spirit: Stallion of the Cimarron"
+            }
+            if (nameID.equals("dw_7")) {
+                return "Sinbad: Legend of the Seven Seas"
+            }
+            if (nameID.equals("dw_8")) {
+                return "Shrek 2"
+            }
+            if (nameID.equals("dw_9")) {
+                return "Shark Tale"
+            }
+            if (nameID.equals("dw_10")) {
+                return "Madagascar"
+            }
+            if (nameID.equals("dw_11")) {
+                return "Wallace & Gromit: Curse of the Were-Rabbit"
+            }
+            if (nameID.equals("dw_12")) {
+                return "Over The Hedge"
+            }
+            if (nameID.equals("dw_13")) {
+                return "Flushed Away"
+            }
+            if (nameID.equals("dw_14")) {
+                return "Shrek the Third"
+            }
+            if (nameID.equals("dw_15")) {
+                return "Bee Movie"
+            }
+            if (nameID.equals("dw_16")) {
+                return "Kung Fu Panda"
+            }
+            if (nameID.equals("dw_17")) {
+                return "Madagascar: Escape 2 Africa"
+            }
+            if (nameID.equals("dw_18")) {
+                return "Monsters vs Aliens"
+            }
+            if (nameID.equals("dw_19")) {
+                return "How to Train Your Dragon"
+            }
+            if (nameID.equals("dw_20")) {
+                return "Shrek Forever After"
+            }
+            if (nameID.equals("dw_21")) {
+                return "Megamind"
+            }
+            if (nameID.equals("dw_22")) {
+                return "Kung Fu Panda 2"
+            }
+            if (nameID.equals("dw_23")) {
+                return "Puss in Boots"
+            }
+            if (nameID.equals("dw_24")) {
+                return "Madagascar 3: Europe's Most Wanted"
+            }
+            if (nameID.equals("dw_25")) {
+                return "Rise of the Guardians"
+            }
+            if (nameID.equals("dw_26")) {
+                return "The Croods"
+            }
+            if (nameID.equals("dw_27")) {
+                return "Turbo"
+            }
+            if (nameID.equals("dw_28")) {
+                return "Mr. Peabody & Sherman"
+            }
+            if (nameID.equals("dw_29")) {
+                return "How to Train Your Dragon 2"
+            }
+            if (nameID.equals("dw_30")) {
+                return "Penguins of Madagascar"
+            }
+            if (nameID.equals("dw_31")) {
+                return "Home"
+            }
+            if (nameID.equals("dw_32")) {
+                return "Kung Fu Panda 3"
+            }
+            if (nameID.equals("dw_33")) {
+                return "Trolls"
+            }
+            if (nameID.equals("dw_34")) {
+                return "The Boss Baby"
+            }
+            if (nameID.equals("dw_35")) {
+                return "Captain Underpants: The First Epic"
+            }
+            if (nameID.equals("dw_36")) {
+                return "How to Train Your Dragon: The Hidden World"
+            }
+            if (nameID.equals("dw_37")) {
+                return "Abominable"
+            }
+            if (nameID.equals("dw_38")) {
+                return "Trolls World Tour"
+            }
+        } else if (nameID.substring(0, 2).equals("cj")) {
+            if (nameID.equals("cj_1")) {
+                return "The Conjuring"
+            }
+            if (nameID.equals("cj_2")) {
+                return "The Conjuring 2"
+            }
+            if (nameID.equals("cj_3")) {
+                return "Annabelle"
+            }
+            if (nameID.equals("cj_4")) {
+                return "Annabelle: Creation"
+            }
+            if (nameID.equals("cj_5")) {
+                return "Annabelle Comes Home"
+            }
+            if (nameID.equals("cj_6")) {
+                return "The Nun"
+            }
+            if (nameID.equals("cj_7")) {
+                return "The Curse of La Llorona"
+            }
+        } else if (nameID.substring(0, 2).equals("bo")) {
+            if (nameID.equals("bo_1")) {
+                return "The Bourne Identity"
+            }
+            if (nameID.equals("bo_2")) {
+                return "The Bourne Supremacy"
+            }
+            if (nameID.equals("bo_3")) {
+                return "The Bourne Ultimatum"
+            }
+            if (nameID.equals("bo_4")) {
+                return "The Bourne Legacy"
+            }
+            if (nameID.equals("bo_5")) {
+                return "Jason Bourne"
+            }
+        } else if (nameID.substring(0, 2).equals("rk")) {
+            if (nameID.equals("rk_1")) {
+                return "Rocky"
+            }
+            if (nameID.equals("rk_2")) {
+                return "Rocky 2"
+            }
+            if (nameID.equals("rk_3")) {
+                return "Rocky 3"
+            }
+            if (nameID.equals("rk_4")) {
+                return "Rocky 4"
+            }
+            if (nameID.equals("rk_5")) {
+                return "Rocky 5"
+            }
+            if (nameID.equals("rk_6")) {
+                return "Rocky Balboa"
+            }
+            if (nameID.equals("rk_7")) {
+                return "Creed"
+            }
+            if (nameID.equals("rk_8")) {
+                return "Creed 2"
+            }
+        } else if (nameID.substring(0, 2).equals("dh")) {
+            if (nameID.equals("dh_1")) {
+                return "Die Hard"
+            }
+            if (nameID.equals("dh_2")) {
+                return "Die Hard 2"
+            }
+            if (nameID.equals("dh_3")) {
+                return "Die Hard with a Vengeance"
+            }
+            if (nameID.equals("dh_4")) {
+                return "Live Free of Die Hard"
+            }
+            if (nameID.equals("dh_5")) {
+                return "A Good Day to Die Hard"
+            }
+        } else if (nameID.substring(0, 2).equals("tw")) {
+            if (nameID.equals("tw_1")) {
+                return "Twilight"
+            }
+            if (nameID.equals("tw_1")) {
+                return "New Moon"
+            }
+            if (nameID.equals("tw_1")) {
+                return "Eclipse"
+            }
+            if (nameID.equals("tw_1")) {
+                return "Breaking Dawn Part 1"
+            }
+            if (nameID.equals("tw_1")) {
+                return "Breaking Dawn Part 2"
+            }
+        } else if (nameID.substring(0, 2).equals("cn")) {
+            if (nameID.equals("cn_1")) {
+                return "Memento"
+            }
+            if (nameID.equals("cn_2")) {
+                return "Insomnia"
+            }
+            if (nameID.equals("cn_3")) {
+                return "Batman Begins"
+            }
+            if (nameID.equals("cn_4")) {
+                return "The Prestige"
+            }
+            if (nameID.equals("cn_5")) {
+                return "The Dark Knight"
+            }
+            if (nameID.equals("cn_6")) {
+                return "Inception"
+            }
+            if (nameID.equals("cn_7")) {
+                return "The Dark Knight Rises"
+            }
+            if (nameID.equals("cn_8")) {
+                return "Interstellar"
+            }
+            if (nameID.equals("cn_9")) {
+                return "Dunkirk"
+            }
+            if (nameID.equals("cn_10")) {
+                return "Tenet"
+            }
+        } else if (nameID.substring(0, 2).equals("dv")) {
+            if (nameID.equals("dv_1")) {
+                return "Incendies"
+            }
+            if (nameID.equals("dv_2")) {
+                return "Prisoners"
+            }
+            if (nameID.equals("dv_3")) {
+                return "Enemy"
+            }
+            if (nameID.equals("dv_4")) {
+                return "Sicario"
+            }
+            if (nameID.equals("dv_5")) {
+                return "Arrival"
+            }
+            if (nameID.equals("dv_6")) {
+                return "Blade Runner 2049"
+            }
+            if (nameID.equals("dv_7")) {
+                return "Dune"
+            }
         }
         return ""
     }
