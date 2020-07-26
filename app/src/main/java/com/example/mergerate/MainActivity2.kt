@@ -4,19 +4,27 @@ import android.content.Intent
 import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.ImageButton
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.InterstitialAd
+import com.google.android.gms.ads.MobileAds
 import kotlinx.android.synthetic.main.activity_main2.*
 import kotlin.concurrent.thread
 
 class MainActivity2 : AppCompatActivity() {
     var clickedOne = false
     var clickedTwo = false
+    private lateinit var mInterstitialAd: InterstitialAd
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setTheme(R.style.DarkTheme)
         setTitle("Scientific Ranking")
         setContentView(R.layout.activity_main2)
+
+        MobileAds.initialize(this)
+        adView.loadAd(AdRequest.Builder().build())
 
         //Get the button pressed from last activity
         val movie = intent.getStringExtra("movie")
