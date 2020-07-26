@@ -7,32 +7,376 @@
     android:background="?attr/bgColor"
     tools:context=".MainActivity">
 
-    <ImageButton
-        android:id="@+id/imageButtonStarWars"
-        android:layout_width="153dp"
-        android:layout_height="231dp"
-        android:background="#000000"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.155"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.092"
-        app:srcCompat="@drawable/starwars" />
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
 
-    <ImageButton
-        android:id="@+id/imageButtonHarryPotter"
-        android:layout_width="153dp"
-        android:layout_height="231dp"
-        android:background="#000000"
-        android:scaleType="fitXY"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.875"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.092"
-        app:srcCompat="@drawable/harrypotter" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp"
+            android:stretchColumns="0,1">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp">
+
+                <ImageButton
+                    android:id="@+id/imageButtonStarWars"
+                    android:layout_width="120dp"
+                    android:layout_height="260dp"
+                    android:layout_marginRight="8dp"
+                    android:background="#000000"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/starwars" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonMarvel"
+                    android:layout_width="120dp"
+                    android:layout_height="260dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#000000"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/marvel" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp">
+
+                <ImageButton
+                    android:id="@+id/imageButtonDC"
+                    android:layout_width="120dp"
+                    android:layout_height="260dp"
+                    android:layout_marginRight="8dp"
+                    android:background="#000000"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/dc" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonPirates"
+                    android:layout_width="120dp"
+                    android:layout_height="260dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#000000"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/pirates" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp">
+
+                <ImageButton
+                    android:id="@+id/imageButtonHarryPotter"
+                    android:layout_width="120dp"
+                    android:layout_height="260dp"
+                    android:layout_marginRight="8dp"
+                    android:background="#000000"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/harrypotter" />
+
+
+
+                <ImageButton
+                    android:id="@+id/imageButtonLordRings"
+                    android:layout_width="120dp"
+                    android:layout_height="260dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#000000"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/lr" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp">
+
+                <ImageButton
+                    android:id="@+id/imageButtonFastFurious"
+                    android:layout_width="120dp"
+                    android:layout_height="260dp"
+                    android:layout_marginRight="8dp"
+                    android:background="#000000"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/ff" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonPixar"
+                    android:layout_width="120dp"
+                    android:layout_height="260dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#000000"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/px" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp">
+
+                <ImageButton
+                    android:id="@+id/imageButtonJamesBond"
+                    android:layout_width="120dp"
+                    android:layout_height="260dp"
+                    android:layout_marginRight="8dp"
+                    android:background="#000000"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/jb" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonDreamworks"
+                    android:layout_width="120dp"
+                    android:layout_height="260dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#000000"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/dw" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp">
+
+                <ImageButton
+                    android:id="@+id/imageButtonXMen"
+                    android:layout_width="120dp"
+                    android:layout_height="260dp"
+                    android:layout_marginRight="8dp"
+                    android:background="#000000"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/xm" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonConjuring"
+                    android:layout_width="120dp"
+                    android:layout_height="260dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#000000"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/cj"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp">
+
+                <ImageButton
+                    android:id="@+id/imageButtonMissionImpossible"
+                    android:layout_width="120dp"
+                    android:layout_height="260dp"
+                    android:layout_marginRight="8dp"
+                    android:background="#000000"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/mi" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonIndianaJones"
+                    android:layout_width="120dp"
+                    android:layout_height="260dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#000000"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/ij"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp">
+
+                <ImageButton
+                    android:id="@+id/imageButtonTerminator"
+                    android:layout_width="120dp"
+                    android:layout_height="260dp"
+                    android:layout_marginRight="8dp"
+                    android:background="#000000"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/tm" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonAlien"
+                    android:layout_width="120dp"
+                    android:layout_height="260dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#000000"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/al"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp">
+
+                <ImageButton
+                    android:id="@+id/imageButtonJasonBourne"
+                    android:layout_width="120dp"
+                    android:layout_height="260dp"
+                    android:layout_marginRight="8dp"
+                    android:background="#000000"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/bo" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonRocky"
+                    android:layout_width="120dp"
+                    android:layout_height="260dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#000000"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/rk"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp">
+
+                <ImageButton
+                    android:id="@+id/imageButtonDieHard"
+                    android:layout_width="120dp"
+                    android:layout_height="260dp"
+                    android:layout_marginRight="8dp"
+                    android:background="#000000"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/dh" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonTwilight"
+                    android:layout_width="120dp"
+                    android:layout_height="260dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#000000"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/tw"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp">
+
+                <ImageButton
+                    android:id="@+id/imageButtonTransformers"
+                    android:layout_width="120dp"
+                    android:layout_height="260dp"
+                    android:layout_marginRight="8dp"
+                    android:background="#000000"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/tf" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonJurassicPark"
+                    android:layout_width="120dp"
+                    android:layout_height="260dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#000000"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/jp"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp">
+
+                <ImageButton
+                    android:id="@+id/imageButtonNolan"
+                    android:layout_width="120dp"
+                    android:layout_height="260dp"
+                    android:layout_marginRight="8dp"
+                    android:background="#000000"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/cn" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonVilleneuve"
+                    android:layout_width="120dp"
+                    android:layout_height="260dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#000000"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/dv" />
+
+            </TableRow>
+        </TableLayout>
+    </androidx.core.widget.NestedScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
