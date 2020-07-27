@@ -76,6 +76,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
 <<<<<<< HEAD
+<<<<<<< HEAD
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.903"
@@ -91,10 +92,15 @@
         ads:adSize="BANNER"
         ads:adUnitId="ca-app-pub-1242414778248684/5840752600"/>
 =======
+=======
+>>>>>>> parent of d179466... Added names to posters and added an object for the movie names
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.903"
         tools:visibility="invisible" />
+<<<<<<< HEAD
+>>>>>>> parent of d179466... Added names to posters and added an object for the movie names
+=======
 >>>>>>> parent of d179466... Added names to posters and added an object for the movie names
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -24,9 +24,12 @@ class MainActivity2 : AppCompatActivity() {
         setContentView(R.layout.activity_main2)
         textViewTest.setText("")
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         MobileAds.initialize(this)
         adView.loadAd(AdRequest.Builder().build())
+=======
+>>>>>>> parent of d179466... Added names to posters and added an object for the movie names
 =======
 >>>>>>> parent of d179466... Added names to posters and added an object for the movie names
 
