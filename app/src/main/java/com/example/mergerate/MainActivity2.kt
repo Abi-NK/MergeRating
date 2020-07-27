@@ -23,9 +23,12 @@ class MainActivity2 : AppCompatActivity() {
         setTitle("Scientific Ranking")
         setContentView(R.layout.activity_main2)
         textViewTest.setText("")
+<<<<<<< HEAD
 
         MobileAds.initialize(this)
         adView.loadAd(AdRequest.Builder().build())
+=======
+>>>>>>> parent of d179466... Added names to posters and added an object for the movie names
 
         //Get the button pressed from last activity
         val movie = intent.getStringExtra("movie")
