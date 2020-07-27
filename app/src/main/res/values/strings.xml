@@ -4,4 +4,5 @@
     <string name="description">The algorithm uses merge sort to figure out your favourite movie.</string>
     <string name="left"> </string>
     <string name="right"> </string>
+    <string name="follow">Follow me @zoliarte :</string>
 </resources>

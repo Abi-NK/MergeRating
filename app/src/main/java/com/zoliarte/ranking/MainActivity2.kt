@@ -19,7 +19,7 @@ class MainActivity2 : AppCompatActivity() {
         setTitle("Scientific Ranking")
         setContentView(R.layout.activity_main2)
 
-        MobileAds.initialize(this, "ca-app-pub-3940256099942544~3347511713")
+        MobileAds.initialize(this)
         adView.loadAd(AdRequest.Builder().build())
 
         //Get the button pressed from last activity
@@ -182,12 +182,19 @@ class MainActivity2 : AppCompatActivity() {
         }
     }
 
+    @Override
+    public override fun onBackPressed() {
+        super.onBackPressed()
+        this.finish()
+    }
+
     fun runThread(numbers: List<String>) {
         thread(start = true) {
             val sortedList = mergeSort(numbers)
             val intent = Intent(this, Results::class.java)
             intent.putStringArrayListExtra("rating", ArrayList(sortedList))
             startActivity(intent)
+            this.finish()
         }
     }
 
