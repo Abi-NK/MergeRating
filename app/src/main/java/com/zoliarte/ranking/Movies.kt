@@ -1,4 +1,4 @@
-package com.example.mergerate
+package com.zoliarte.ranking
 
 class Movies {
     private var movieID = ""

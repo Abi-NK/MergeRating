@@ -1,10 +1,11 @@
-package com.example.mergerate
+package com.zoliarte.ranking
 
 import android.content.Intent
-import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.MobileAds
 import kotlinx.android.synthetic.main.activity_main2.*
 import kotlin.concurrent.thread
 
@@ -17,6 +18,9 @@ class MainActivity2 : AppCompatActivity() {
         setTheme(R.style.DarkTheme)
         setTitle("Scientific Ranking")
         setContentView(R.layout.activity_main2)
+
+        MobileAds.initialize(this, "ca-app-pub-3940256099942544~3347511713")
+        adView.loadAd(AdRequest.Builder().build())
 
         //Get the button pressed from last activity
         val movie = intent.getStringExtra("movie")

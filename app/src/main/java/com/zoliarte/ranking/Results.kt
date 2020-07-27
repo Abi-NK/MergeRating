@@ -1,4 +1,4 @@
-package com.example.mergerate
+package com.zoliarte.ranking
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

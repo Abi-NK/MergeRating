@@ -1,4 +1,4 @@
-package com.example.mergerate
+package com.zoliarte.ranking
 
 import org.junit.Test
 
