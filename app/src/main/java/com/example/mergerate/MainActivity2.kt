@@ -22,6 +22,7 @@ class MainActivity2 : AppCompatActivity() {
         setTheme(R.style.DarkTheme)
         setTitle("Scientific Ranking")
         setContentView(R.layout.activity_main2)
+        textViewTest.setText("")
 
         MobileAds.initialize(this)
         adView.loadAd(AdRequest.Builder().build())
@@ -189,6 +190,10 @@ class MainActivity2 : AppCompatActivity() {
     fun runThread(numbers: List<String>) {
         thread(start = true) {
             val sortedList = mergeSort(numbers)
+            runOnUiThread {
+                textViewTest.setText(sortedList.toString())
+            }
+
             val intent = Intent(this, Results::class.java)
             intent.putStringArrayListExtra("rating", ArrayList(sortedList))
             startActivity(intent)
@@ -212,11 +217,8 @@ class MainActivity2 : AppCompatActivity() {
         var indexRight = 0
         var newList : MutableList<String> = mutableListOf()
 
-        val mov = Movies()
-
         runOnUiThread {
-            textViewLeft.setText(mov.getName(left[indexLeft]))
-            textViewRight.setText(mov.getName(right[indexRight]))
+            textViewTest.setText(left[indexLeft] + " or " + right[indexRight])
         }
 
         val imageOptionOne = findViewById<ImageButton>(R.id.imageButtonOne)
@@ -233,10 +235,9 @@ class MainActivity2 : AppCompatActivity() {
             runOnUiThread {
                 val id1 = resources.getIdentifier(left[indexLeft], "drawable", packageName)
                 imageOptionOne.setImageResource(id1)
-                textViewLeft.setText(mov.getName(left[indexLeft]))
                 val id2 = resources.getIdentifier(right[indexRight], "drawable", packageName)
                 imageOptionTwo.setImageResource(id2)
-                textViewRight.setText(mov.getName(right[indexRight]))
+                textViewTest.setText(left[indexLeft] + " or " + right[indexRight])
             }
 
             while (!clickedOne && !clickedTwo) {

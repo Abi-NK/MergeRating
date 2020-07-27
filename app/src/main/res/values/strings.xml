@@ -2,6 +2,7 @@
     <string name="app_name">MergeRate</string>
     <string name="question">Which movie is better?</string>
     <string name="description">The algorithm uses merge sort to figure out your favourite movie.</string>
+<<<<<<< HEAD
     <string name="left"> </string>
     <string name="right"> </string>
     <string name="title_activity_breaker_ad">MainActivity</string>
@@ -16,4 +17,6 @@
         For more information, see https://support.google.com/admob/answer/3052638
     <!- -->
     <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+=======
+>>>>>>> parent of d179466... Added names to posters and added an object for the movie names
 </resources>
