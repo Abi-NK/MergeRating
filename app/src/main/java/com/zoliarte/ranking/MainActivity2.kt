@@ -195,7 +195,7 @@ class MainActivity2 : AppCompatActivity() {
             intent.putStringArrayListExtra("rating", ArrayList(sortedList))
             startActivity(intent)
             this.finish()
-        }
+        }.interrupt()
     }
 
     fun mergeSort(list: List<String>): List<String> {
