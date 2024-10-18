@@ -24,4 +24,4 @@ This is an android app that uses merge sort to rank movies within a franchise ba
 
 ## Authors
 
-- **Abhishek Nand Kumar** -------- [Abhishek-NK](https://github.com/Abhishek-NK)
+- **Abi Nand Kumar** -------- [Abi-NK](https://github.com/Abi-NK)
